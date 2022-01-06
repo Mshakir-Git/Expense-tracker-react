@@ -9,6 +9,7 @@ export const Balance = () => {
         t.forEach(tx => b+=tx.amount);
         return b;
     }
+    const sign=calc(transactions)<0?"-":"+"
 
     return (
         <>
@@ -16,7 +17,7 @@ export const Balance = () => {
             Your Balance
         </h4>
         <h1 id="balance">
-            ${calc(transactions)}
+            {sign}${Math.abs(calc(transactions))}
         </h1>
             
         </>

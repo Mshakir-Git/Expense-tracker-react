@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.minus{
+border-right: 3px solid red;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.plus{
+    border-right: 3px solid rgb(0, 255, 0);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width:60vw;
+    margin:auto;
+    border-radius: 4px;
+    background-color: rgb(32, 32, 32);
+    color: rgb(235, 235, 235);
+    padding:20px;
 }
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: rgb(224, 224, 224);
+    color:black;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
+.delete-btn{
+    background-color: tomato;
+    border:0px;
+    border-radius: 10px;
+    color: wheat;
 
-.App-link {
-  color: #61dafb;
 }
+.inc-exp-container>div{
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    margin:10px;
+    width:120px;
+    border-radius: 4px;
+    color:black;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+}
+.inc-exp-container{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    padding-left: 0px;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px
+}
+form{
+    padding: 10px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 4px;
+    color:black;
+
+}
+.money-plus{
+    color: rgb(40, 163, 2);
+    font-size: 23px;
+}
+.money-minus{
+    color: rgb(212, 33, 1);
+    font-size: 23px;
+}
+input{
+    padding: 4px;
+    flex:1;
+}
+label{
+    width:100px;
+}
+.btn{
+    width:100%;
+    background-color: rgb(22, 22, 22);
+    color: thistle;
+    padding:5px;
 }
